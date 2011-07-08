@@ -1,4 +1,6 @@
-==== Calculation of great-circle distance by Haversine formula implemented as C extension
+FasterHaversine
+===============
+Calculation of great-circle distance by Haversine formula implemented as C extension
 
 Usage:
 

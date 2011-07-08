@@ -2,15 +2,15 @@
 #include <math.h>
 
 static double haversine_distance(double lat1, double lng1, double lat2, double lng2);
-static VALUE rb_distance(VALUE self, VALUE lat1, VALUE lng1, VALUE lat2, VALUE lng2);
+static VALUE rb_haversine_distance(VALUE self, VALUE lat1, VALUE lng1, VALUE lat2, VALUE lng2);
 
 void Init_faster_haversine()
 {
   VALUE module = rb_define_module("FasterHaversine");
-  rb_define_module_function(module, "distance", rb_distance, 4);
+  rb_define_singleton_method(module, "haversine_distance", rb_haversine_distance, 4);
 }
 
-static VALUE rb_distance(VALUE self, VALUE lat1, VALUE lng1, VALUE lat2, VALUE lng2)
+static VALUE rb_haversine_distance(VALUE self, VALUE lat1, VALUE lng1, VALUE lat2, VALUE lng2)
 {
     double distance = haversine_distance(NUM2DBL(lat1), NUM2DBL(lng1), NUM2DBL(lat2), NUM2DBL(lng2));
 	return rb_float_new(distance);

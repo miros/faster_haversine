@@ -19,10 +19,4 @@ describe FasterHaversine do
     end
   end
 
-  it "works as module method" do
-    object = Object.new
-    object.extend(described_class)
-    object.send(:distance, 12, 34, 56, 78).should be_instance_of(Float)
-  end
-
 end
