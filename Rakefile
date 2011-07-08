@@ -21,6 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Haversine great-circle distance formula implemented as C extension}
   gem.email = "mirosm@mirosm.ru"
   gem.authors = ["miros"]
+  gem.extensions = ["ext/faster_haversine/extconf.rb"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
