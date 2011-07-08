@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{faster_haversine}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["miros"]
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".yardopts",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -31,6 +32,7 @@ Gem::Specification.new do |s|
     "ext/faster_haversine/faster_haversine.c",
     "ext/faster_haversine/faster_haversine.o",
     "ext/faster_haversine/faster_haversine.so",
+    "faster_haversine.gemspec",
     "lib/faster_haversine.rb",
     "spec/faster_haversine_spec.rb",
     "spec/spec_helper.rb"
