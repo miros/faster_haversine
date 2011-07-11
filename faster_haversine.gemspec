@@ -27,7 +27,6 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "ext/faster_haversine/Makefile",
     "ext/faster_haversine/extconf.rb",
     "ext/faster_haversine/faster_haversine.c",
     "faster_haversine.gemspec",
