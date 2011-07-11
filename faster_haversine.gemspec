@@ -30,8 +30,6 @@ Gem::Specification.new do |s|
     "ext/faster_haversine/Makefile",
     "ext/faster_haversine/extconf.rb",
     "ext/faster_haversine/faster_haversine.c",
-    "ext/faster_haversine/faster_haversine.o",
-    "ext/faster_haversine/faster_haversine.so",
     "faster_haversine.gemspec",
     "lib/faster_haversine.rb",
     "spec/faster_haversine_spec.rb",
