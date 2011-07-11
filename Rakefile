@@ -22,8 +22,8 @@ Jeweler::Tasks.new do |gem|
   gem.email = "mirosm@mirosm.ru"
   gem.authors = ["miros"]
   gem.extensions = ["ext/faster_haversine/extconf.rb"]
-  gem.files.include 'ext/faster_haversine/faster_haversine.so'
-  gem.files.include 'ext/faster_haversine/faster_haversine.o'
+  gem.files.exclude 'ext/faster_haversine/faster_haversine.so'
+  gem.files.exclude 'ext/faster_haversine/faster_haversine.o'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
