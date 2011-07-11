@@ -48,3 +48,5 @@ pkg
 #*.rbc
 
 .idea
+ext/**/*.o
+ext/**/*.so
