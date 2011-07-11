@@ -4,11 +4,11 @@ SHELL = /bin/sh
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /home/miros/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/i686-linux
+topdir = /home/miros/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/x86_64-linux
 hdrdir = $(topdir)
 VPATH = $(srcdir):$(topdir):$(hdrdir)
 exec_prefix = $(prefix)
-prefix = $(DESTDIR)/home/miros/.rvm/rubies/ruby-1.8.7-p302
+prefix = $(DESTDIR)/home/miros/.rvm/rubies/ruby-1.8.7-p330
 sharedstatedir = $(prefix)/com
 mandir = $(datarootdir)/man
 psdir = $(docdir)
@@ -46,7 +46,7 @@ LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 RUBY_EXTCONF_H = 
 CFLAGS   =  -fPIC -g -O2  -fPIC $(cflags) 
 INCFLAGS = -I. -I$(topdir) -I$(hdrdir) -I$(srcdir)
-DEFS     = -D_FILE_OFFSET_BITS=64
+DEFS     = 
 CPPFLAGS =   $(DEFS) $(cppflags)
 CXXFLAGS = $(CFLAGS) 
 ldflags  = -L.  -rdynamic -Wl,-export-dynamic
@@ -59,10 +59,10 @@ EXEEXT =
 
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby
-arch = i686-linux
-sitearch = i686-linux
+arch = x86_64-linux
+sitearch = x86_64-linux
 ruby_version = 1.8
-ruby = /home/miros/.rvm/rubies/ruby-1.8.7-p302/bin/ruby
+ruby = /home/miros/.rvm/rubies/ruby-1.8.7-p330/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 MAKEDIRS = mkdir -p
