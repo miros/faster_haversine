@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{faster_haversine}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["miros"]
-  s.date = %q{2011-07-11}
+  s.date = %q{2011-07-22}
   s.description = %q{Haversine great-circle distance formula implemented as C extension}
   s.email = %q{mirosm@mirosm.ru}
   s.extensions = ["ext/faster_haversine/extconf.rb"]
